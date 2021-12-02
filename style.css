@@ -109,6 +109,58 @@ footer p{
     color: white;
 }
 
+/* Home screen parallax*/
+
+section {
+    height: 100vh;
+    display: flex;
+    scroll-snap-align: start;
+}
+
+.wontainer{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.one {
+    background: white;
+    background: rgb(255,228,240);
+    background: linear-gradient(99deg, rgba(255,228,240,1) 30%, rgba(201,148,233,1) 95%);
+}
+
+.two {
+    background: rgb(128,228,61);
+    background: linear-gradient(222deg, rgba(128,228,61,1) 24%, rgba(230,241,157,1) 58%, rgba(255,242,174,1) 72%);
+}
+
+/*change this for each screen size and delete the above from the other screen sizes*/
+.one img{
+    width: 100vh;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+.two img{
+   height: 95vh;
+   padding-top: 10%;
+   padding-left: 15%;
+}
+
+.scrolltext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.scrolltext p{
+    font-size: 1.5em;
+    padding-top: 36%;
+    padding-left: 15%;
+}
+
+.title-text {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 /* UI/UX PAGE (GRID) *************************************************************************/
 
 .body-text {
@@ -246,6 +298,34 @@ input[type=text] {
         font-size: 3.5em;
         text-align: center;
     }    
+
+/* HOME SCREEN PARALLAX */
+
+.one img{
+    width: 100vh;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+.two img{
+   height: 95vh;
+   padding-top: 10%;
+   padding-left: 15%;
+}
+
+.scrolltext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.scrolltext p{
+    font-size: 1.5em;
+    padding-top: 36%;
+    padding-left: 15%;
+}
+
+.title-text {
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
 /*UI/UX PAGE**************************************************************************************/
     .image-galleryone {
@@ -405,34 +485,50 @@ input[type=text] {
         text-align: center;
     }    
 
+/* HOME PAGE PARALLAX RESIZING */
+
+.one img{
+    width: 100vh;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+.two img{
+   height: 95vh;
+   padding-top: 10%;
+   padding-left: 15%;
+}
+
+.scrolltext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.scrolltext p{
+    font-size: 1.5em;
+    padding-top: 36%;
+    padding-left: 15%;
+}
+
+.title-text {
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
 /*CONTACT PAGE **************************************************************************************/
 
-    /* .form{
-        float: left;
-        padding-top: 5%;
-    }
+/* Changing format so it's side by side*/
     .main-text {
-        width: 50%; 
-        float: left;
-        padding-left: 4%;
-    } */
-
-    .main-text {
-        padding-left: 4%;
+        padding-left: 7%;
     }
-    /* https://stackoverflow.com/questions/3778201/how-do-i-display-2-sections-side-by-side */
-
 
     #mainsection {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            /* padding: 10px; */
-          }
+}
 
 
 /*ABOUT ME PAGE *************************************************************************************/
 
+/*side by side*/
 .about-me {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -444,15 +540,6 @@ input[type=text] {
     padding-left: 12%;
 }
 
-
-/* .about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
-
-
 .about-me p{
     color: white;
     padding-top: 9%;
@@ -460,12 +547,8 @@ input[type=text] {
     padding-right: 10%;
     font-size: 1.5em;
 }
-/* 
-.about-me img{
-    width: 70%;
-    padding-right: 20%;
-    padding-top: 5%; } */
 
+/*FLIP CARD*/
 
     .flip-card {
         /* background-color: transparent; */
@@ -498,10 +581,10 @@ input[type=text] {
         backface-visibility: hidden;
       }
       
-      .flip-card-front {
+      /* .flip-card-front {
         background-color: #bbb;
         color: black;
-      }
+      } */
       
       .flip-card-back {
         background-color: #FFA500;
@@ -509,77 +592,6 @@ input[type=text] {
         transform: rotateY(180deg);
       }
     
-section {
-    height: 100vh;
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    scroll-snap-align: start;
-}
-
-.wontainer{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-}
-
-.one {
-    background: white;
-    background: rgb(255,228,240);
-background: linear-gradient(99deg, rgba(255,228,240,1) 30%, rgba(201,148,233,1) 95%);
-/* background: rgb(142,226,107);
-background: linear-gradient(71deg, rgba(142,226,107,1) 15%, rgba(246,255,178,1) 53%); */
-}
-
-.one img{
-    width: 55%;
-    /* height: 97%; */
-    padding-top: 2%;
-}
-
-
-.two {
-    background: rgb(128,228,61);
-background: linear-gradient(222deg, rgba(128,228,61,1) 24%, rgba(230,241,157,1) 58%, rgba(255,242,174,1) 72%);}
-
-.one img{
-    width: 100vh;
-    padding-left: 5%;
-    padding-top: 10%;
-}
-.two img{
-   height: 95vh;
-   padding-top: 10%;
-   padding-left: 15%;
-}
-
-.scrolltext p{
-    font-size: 1.5em;
-    padding-top: 36%;
-    padding-left: 15%;
-}
-
-.title-text {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-/* .one h1 {
-    font-size: 3em;
-    color: black;
-} */
-
-.scrolltext p{
-    font-size: 2em;
-}
-
-.scrolltext {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-body {
-    cursor: url(../images/star_2b50.png);
-}
 
 
 /*UI/UX PAGE**************************************************************************************/
@@ -612,10 +624,7 @@ padding-left: 7%;
 padding-bottom: 10%;
 }
 
-
-
-
-      /* DESIGN PAGE ***************************************************************************************/
+ /* DESIGN PAGE ***************************************************************************************/
 
       .image-gallery {
         display: grid;
