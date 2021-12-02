@@ -432,13 +432,24 @@ input[type=text] {
 
 /*ABOUT ME PAGE *************************************************************************************/
 
-
 .about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-me img{
+    width: 80%;
+    margin-top: -35%;
+    padding-left: 12%;
+}
+
+
+/* .about-me {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+} */
 
 
 .about-me p{
@@ -446,11 +457,188 @@ input[type=text] {
     padding-top: 9%;
     padding-left: 5%;
     padding-right: 10%;
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
-
+/* 
 .about-me img{
     width: 70%;
     padding-right: 20%;
-    padding-top: 5%; /*to line up my photo w the text on the left*/
+    padding-top: 5%; } */
+
+
+    .flip-card {
+        background-color: transparent;
+        width: 30%;
+        height: 300px;
+        perspective: 1000px;
+      }
+      
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+      
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+      
+      .flip-card-back {
+        background-color: #FFA500;
+        color: white;
+        transform: rotateY(180deg);
+      }
+    
+section {
+    height: 100vh;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    scroll-snap-align: start;
 }
+
+.wontainer{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.one {
+    background: white;
+    background: rgb(255,228,240);
+background: linear-gradient(99deg, rgba(255,228,240,1) 30%, rgba(201,148,233,1) 95%);
+/* background: rgb(142,226,107);
+background: linear-gradient(71deg, rgba(142,226,107,1) 15%, rgba(246,255,178,1) 53%); */
+}
+
+.one img{
+    width: 55%;
+    /* height: 97%; */
+    padding-top: 2%;
+}
+
+
+.two {
+    background: rgb(128,228,61);
+background: linear-gradient(222deg, rgba(128,228,61,1) 24%, rgba(230,241,157,1) 58%, rgba(255,242,174,1) 72%);}
+
+.one img{
+    width: 100vh;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+.two img{
+   height: 95vh;
+   padding-top: 10%;
+   padding-left: 15%;
+}
+
+.scrolltext p{
+    font-size: 1.5em;
+    padding-top: 36%;
+    padding-left: 15%;
+}
+
+.title-text {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/* .one h1 {
+    font-size: 3em;
+    color: black;
+} */
+
+.scrolltext p{
+    font-size: 2em;
+}
+
+.scrolltext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+body {
+    cursor: url(../images/star_2b50.png);
+}
+
+
+/*UI/UX PAGE**************************************************************************************/
+.image-galleryone {
+    /* display: grid; */
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-bottom:5%; 
+    padding-top: 20%;
+}
+
+.image-gallerytwo {
+    /* display: grid; */
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    padding-bottom: 5%; /*changing from 25 from the mobile to 5% */
+    padding-right: 3%;
+    padding-left: 3%; /*why isnt this workinig*/
+}
+
+.body-text { /*project descriptions*/
+color: white;
+font-size: 1.8em;
+width: 95%;
+padding-left: 7%;
+padding-bottom: 10%;
+}
+
+
+
+
+      /* DESIGN PAGE ***************************************************************************************/
+
+      .image-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows:  auto auto; */
+        /* justify-content: center; */
+        padding-bottom: 5%; /*changing from 25 from the mobile to 5% */
+        /* padding-right: 3%; */
+        padding-left: 7%;
+    } 
+
+    /* .container ? */
+    .image-gallery p{
+        padding-top: 5%;
+        padding-bottom: 10%;
+        padding-right: 30%;
+        color: white;
+        padding-left: 0%;
+        font-size: 1.5em;
+        /* width: 40%; */
+    } 
+  
+
+    .image-gallery img{
+        height: 95vh;
+        padding-left: 15%;
+        padding-bottom: 10%;
+    }
+
