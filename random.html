@@ -16,6 +16,9 @@
     <title>Random</title>
   </head>
 <body>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
   <header>
     <div class="skip"><a href="#main-text-id">Skip to Main Content</a></div>
     <h1 class = "logo"> Design 🚀</h1>
@@ -59,6 +62,7 @@
       Yellow background, and added rip and crinkle
         textures. I also altered the typography.</p>
         <img src="astro.png" alt=""/>
+        
         <p><span class="special-text">ASTROWORLD ALBUM - TRAVIS SCOTT</span></br>
            2018 <br>
            I used parts of the illustrations for
@@ -96,5 +100,16 @@
         <p>Claire Zuo</p>
         <p> copyright &copy; 2021</p>
    </footer>
+   <script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
 </body>
 </html>

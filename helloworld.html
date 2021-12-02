@@ -12,12 +12,14 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-213862846-1');
 </script>
     <title>Claire Zuo Portfolio</title>
 </head>
 <body>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
 <header>
   <div class="skip"><a href="#main-text-id">Skip to Main Content</a></div>
   <h1 class = "logo"> CZ 🚀</h1>
@@ -77,11 +79,21 @@
       <p><span class="title-text">Design and Technology</span><br>
         I'm passionate about finding new mediums to explore creativity and self teaching myself new mediums</p>
       <img src="plain jane.jpg" alt="plainjane"/>
-    </section>
   </div>
   <footer>
       <p>Claire Zuo</p>
       <p> copyright &copy; 2021</p>
   </footer>
+  <script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
 </body>
 </html>
