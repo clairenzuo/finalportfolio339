@@ -59,17 +59,20 @@ ul li {
     color: white;
     padding: 10px;
     margin: 0 5px;
+    text-decoration: none;
 }
 
 .navbar .container-flex .logo {
-    padding-left: 9%;
+    padding-left: 9%;   
     padding-top: 7%;}
     
 
 /* Makes sure to show what page im on for navigation*/
-#active{
+.navbar .container-flex #active{ /* HOW TO MAKE NON ACTIVE PAGES REMOVE THE UNDERLINE ??? */
     text-decoration: underline 2px;
     color: orange;
+    text-transform: uppercase;
+
 }  
 
 .main-text h1{ /*main text in the middle of the page */
@@ -206,7 +209,7 @@ input[type=text] {
     font-size: 1.5em;
   }
 
-@media screen and (min-width: 850px){ /*tablet tablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet view*/
+@media screen and (min-width: 750px){ /*tablet tablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet view*/
     .logo {
         font-size: 4.25em;
         padding-left: 8%;
@@ -353,5 +356,101 @@ input[type=text] {
     font-size: 1.7em;
 }
 
+@media screen and (min-width: 1025px){
+
+    .navbar .container-flex ul {
+        width: 50%;
+        padding-left: 3%;
+    }    /* movees the entire nav bar to align w the logo*/
 
 
+    .navbar .container-flex ul li {
+    padding: 0%;
+} /*adjusts individual elements in the navbar's spacing from each other */
+
+    
+    .logo {
+        font-size: 2.25em;
+        padding-left: 4%;
+        padding-top: 2.5%;
+        padding-bottom: 3%;
+    }
+    
+    .navbar a{
+        font-size: 1em;
+    }
+    /* .navbar ul{
+        padding-left: 2%;
+    } */
+
+        /* MAKING MAIN PAGE TEXT BIGGER */
+    .main-text h1{
+        font-size: 3.5em;
+        padding-left: 1%;
+        padding-top: 5%;
+        color: white;
+        font-weight: bold;
+    }
+
+    .main-text p{
+        color: white;
+        font-size: 1.5em;
+        text-align: left;
+        padding-left: 1%;
+    }
+
+    .main-text h2{ /*fingerpointing */
+        font-size: 3.5em;
+        text-align: center;
+    }    
+
+
+/*CONTACT PAGE **************************************************************************************/
+
+    /* .form{
+        float: left;
+        padding-top: 5%;
+    }
+    .main-text {
+        width: 50%; 
+        float: left;
+        padding-left: 4%;
+    } */
+
+    .main-text {
+        padding-left: 4%;
+    }
+    /* https://stackoverflow.com/questions/3778201/how-do-i-display-2-sections-side-by-side */
+
+
+    #mainsection {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* padding: 10px; */
+          }
+
+
+/*ABOUT ME PAGE *************************************************************************************/
+
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.about-me p{
+    color: white;
+    padding-top: 9%;
+    padding-left: 5%;
+    padding-right: 10%;
+    font-size: 1.7em;
+}
+
+.about-me img{
+    width: 70%;
+    padding-right: 20%;
+    padding-top: 5%; /*to line up my photo w the text on the left*/
+}
