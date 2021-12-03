@@ -69,11 +69,10 @@ ul li {
     
 
 /* Makes sure to show what page im on for navigation*/
-.navbar .container-flex #active{ /* HOW TO MAKE NON ACTIVE PAGES REMOVE THE UNDERLINE ??? */
+.navbar .container-flex #active{ 
     text-decoration: underline 2px;
     color: orange;
     text-transform: uppercase;
-
 }  
 
 .main-text h1{ /*main text in the middle of the page */
@@ -84,17 +83,16 @@ ul li {
     font-weight: bold;
 }
 
-.main-text h2{ /*fingerpointing */
-    font-size: 2.2em;
-    text-align: center;
-}
-
 .main-text p{
     color: white;
     font-size: 1em;
     text-align: left;
     padding-left: 8%;
-    /* padding-bottom: 70%; */
+}
+
+.main-text h2{ /*fingerpointing alignment*/
+    font-size: 2.2em;
+    text-align: center;
 }
 
 .navbar .container-flex {
@@ -109,7 +107,7 @@ footer p{
     color: white;
 }
 
-/* Home screen parallax*/
+/* Home screen snapscroll*/
 
 section {
     height: 100vh;
@@ -121,6 +119,7 @@ section {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
+    width: 100wh;
 }
 
 .one {
@@ -133,43 +132,65 @@ section {
     background: rgb(128,228,61);
     background: linear-gradient(222deg, rgba(128,228,61,1) 24%, rgba(230,241,157,1) 58%, rgba(255,242,174,1) 72%);
 }
-.three {
-    background: rgb(128,228,61);
-    background: linear-gradient(222deg, rgba(128,228,61,1) 24%, rgba(230,241,157,1) 58%, rgba(255,242,174,1) 72%);
-}
 
-/*change this for each screen size and delete the above from the other screen sizes*/
+/*change this for each screen size*/
 .one img{
     width: 100vh;
-    padding-left: 5%;
-    padding-top: 10%;
+    padding-left: 3%;
+    padding-top: 30%;
+    padding-right: 5%;
 }
 .two img{
-   height: 95vh;
+   width: 85vw;
    padding-top: 10%;
-   padding-left: 15%;
+   padding-left: 12%;
 }
 
-.three img{
-    height: 95vh;
-    padding-top: 10%;
-    padding-left: 15%;
- }
-
-.scrolltext {
+/* .scrolltext { 
     display: grid;
-    /* grid-template-columns: 1fr; */
-}
+    grid-template-rows: 1fr 1fr;
+} */
 .scrolltext p{
-    font-size: 1.5em;
-    padding-top: 36%;
-    padding-left: 15%;
+    font-size: 1em;
+    padding-left: 10%;
+    /* padding-right: 3%; */
+    width: 90%;
+    padding-top: 15%;
+    /* padding-top: 36%; */
+    /* padding-left: 15%; */
+    /* text-align: */
+}
+
+.scrolltext2 p{
+    font-size: 1em;
+    padding-left: 10%;
+    /* padding-right: 3%; */
+    width: 90%;
+    padding-top: 25%;
+    /* padding-top: 36%; */
+    /* padding-left: 15%; */
+    /* text-align: */
 }
 
 .title-text {
     font-size: 1.5em;
     font-weight: bold;
 }
+
+/* PROGRESS BAR */
+.progress-container {
+    width: 100%;
+    height: 3.5px;
+    background:white;
+    position: fixed;
+    top: 0%;
+  }
+  
+  .progress-bar {
+    height: 3.5px;
+    background:red;
+    width: 0%;
+  }
 
 /* UI/UX PAGE (GRID) *************************************************************************/
 
@@ -189,7 +210,6 @@ section {
     display: grid;
     padding-bottom: 10%;
 }
-
 .body-text h2{ /*this changes the project title name */
     font-size: 2em;
     font-weight: bold; 
@@ -275,9 +295,9 @@ input[type=text] {
 @media screen and (min-width: 750px){ /*tablet tablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet view*/
     .logo {
         font-size: 4.25em;
-        padding-left: 8%;
-        padding-top: 5%;
-        padding-bottom: 3%;
+        /* padding-left: 8%; */
+        /* padding-top: 5%; */
+        /* padding-bottom: 3%; xtra*/
     }
     
     .navbar a{
@@ -290,26 +310,26 @@ input[type=text] {
     /* MAKING MAIN PAGE TEXT BIGGER */
     .main-text h1{
         font-size: 5em;
-        padding-left: 8%;
+        /* padding-left: 8%; */
         padding-top: 23%;
-        color: white;
-        font-weight: bold;
+        /* color: white;
+        font-weight: bold; */
     }
 
     .main-text p{
-        color: white;
+        /* color: white; */
         font-size: 1.75em;
         text-align: left;
-        padding-left: 8%;
+        /* padding-left: 8%; */
         padding-bottom: 0%;
     }
 
     .main-text h2{ /*fingerpointing */
         font-size: 3.5em;
-        text-align: center;
+        /* text-align: center; */
     }    
 
-/* HOME SCREEN PARALLAX */
+/* Home sceen scroll adjusting size */
 
 .one img{
     width: 70vh;
@@ -317,24 +337,32 @@ input[type=text] {
     padding-top: 10%;
 }
 .two img{
-   height: 95vh;
+   /* height: 90vh; */
    padding-top: 10%;
-   padding-left: 15%;
+   padding-left:20%;
+   /* width: 70vw; */
+   width: 78%;
 }
 
-.three img{
-    height: 95vh;
-    padding-top: 10%;
-    padding-left: 15%;
- }
-
-.scrolltext {
+/* .scrolltext {
     grid-template-rows: 1fr 1fr;
-}
+} */
 .scrolltext p{
-    font-size: 1.5em;
-    padding-top: 36%;
+    font-size: 1em;
+    /* padding-top: 36%; */
     padding-left: 15%;
+    padding-top: 5%;
+}
+
+.scrolltext2 p{
+    font-size: 1em;
+    padding-left: 10%;
+    /* padding-right: 3%; */
+    width: 90%;
+    padding-top: 10%;
+    /* padding-top: 36%; */
+    /* padding-left: 15%; */
+    /* text-align: */
 }
 
 .title-text {
@@ -356,8 +384,8 @@ input[type=text] {
 
     .image-gallerytwo {
         /* display: grid; */
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto;
         justify-content: center;
         padding-bottom: 5%; /*changing from 25 from the mobile to 5% */
         padding-right: 3%;
@@ -365,16 +393,16 @@ input[type=text] {
     }
 
     .body-text { /*project descriptions*/
-    color: white;
+    /* color: white; */
     font-size: 1.8em;
     width: 95%;
     padding-left: 7%;
-    padding-bottom: 10%;
+    /* padding-bottom: 10%; */
     }
 
     /*CONTACT PAGE **************************************************************************************/
 
-    input[type=text] {
+    /* input[type=text] {
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
@@ -383,25 +411,25 @@ input[type=text] {
         border-radius: 4px;
         box-sizing: border-box;
         background-color: white;
-      }
+      } */
       
-      #message {
+      /* #message {
           padding-bottom: 100px;}
-          
+           */
       input[type=submit] {
         width: 30%;
-        background-color: orange;
+        /* background-color: orange;
         color: black;
         padding: 14px 20px;
         margin: 8px 0;
         border: none;
         border-radius: 50px;
-        cursor: pointer;
+        cursor: pointer; */
       }
       
-      input[type=submit]:hover {
+      /* input[type=submit]:hover {
         background-color: #E88404;
-      }
+      } */
       
       .form {
         padding: 8%;
@@ -425,10 +453,10 @@ input[type=text] {
 
     /* .container ? */
     .image-gallery p{
-        padding-top: 5%;
+        /* padding-top: 5%;
         padding-bottom: 10%;
         padding-right: 5%;
-        color: white;
+        color: white; */
         padding-left: 10%;
         font-size: 1.5em;
     } 
@@ -445,14 +473,14 @@ input[type=text] {
 
 
 .about-me p{
-    color: white;
+    /* color: white; */
     padding-top: 9%;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     padding-right: 10%;
     font-size: 1.7em;
 }
 
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 1025px){ /*widescreenview  widescreenview  widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview  */
 
     .navbar .container-flex ul {
         width: 50%;
@@ -513,21 +541,28 @@ input[type=text] {
    padding-left: 15%;
 }
 
-.three img{
-    height: 95vh;
-    padding-top: 10%;
-    padding-left: 15%;
- }
 
 .scrolltext {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.scrolltext p{
+
+.scrolltext2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.scrolltext  p{
     font-size: 1.5em;
     padding-top: 36%;
     padding-left: 15%;
 }
+
+.scrolltext2 p{
+    font-size: 1.5em;
+    padding-top: 36%;
+    padding-left: 15%;
+}
+
 
 .title-text {
     font-size: 1.5em;
@@ -675,16 +710,10 @@ padding-bottom: 10%;
         padding-bottom: 10%;
     }
 
-    .progress-container {
-        width: 100%;
-        height: 3.5px;
-        background:white;
-        position: fixed;
-        top: 0%;
-      }
-      
-      .progress-bar {
-        height: 3.5px;
-        background:red;
-        width: 0%;
-      }
+
+
+
+
+
+/*UI/UX PAGE**************************************************************************************/
+
