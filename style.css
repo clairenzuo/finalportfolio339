@@ -2,12 +2,91 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: black;
+    /* background-color: white; */
     background-size: 100% 100%;
 }
 
+.dark-mode-toggle {
+    font-size: 3em; 
+padding-left: 82%;
+padding-top: 1%;
+}
+
+
+/* rules that apply globally */
+body {
+    /* font-family: system-ui, -apple-system, sans-serif;
+    text-align: center; */
+  }
+  a {
+    text-decoration: none;
+  }
+  .dark-mode-toggle {
+    /* cursor: pointer; */
+    /* width: 20%; */
+    /* padding: 1em; */
+  
+    /* hide toggle until we're sure user has JS enabled */
+    visibility: hidden;
+  }
+  
+  /* theme-specific rules -- you probably only want color-related stuff here */
+  /* SCSS makes this a whole lot easier by allowing nesting, but is not required */
+  body.light {
+    background-color: black; /*NT*/
+    color:black; /* THIS CHANGES paragraph tex below */
+  }
+  body.light a {
+    color:black;
+  }
+
+  body.light a {
+    color:white;
+  }
+
+  /* LIGHT MODE*/
+
+  body.dark {
+    background-color: white; 
+    color:black;
+  }
+  body.dark a {
+    color:black;
+  }
+
+  body.dark .logo {
+    color:black;
+  }
+
+
+  body.dark h1 {
+    color:black;
+  }
+
+  body.dark .main-text p{
+    color:black;
+  }
+
+  body.dark .image-gallery p{
+      color: black;
+  }
+
+  body.dark .about-me p{
+    color: black;
+}
+
+
+body.dark .body-text{
+    color: black;
+}
+
+body.dark .body-text h2 {
+    color: black;
+}
+
+
+
 body{
-    background-color: black !important;   /*find a way to do this without using important*/
     font-family: Helvetica, sans-serif;
     line-height: 1.6;
 }
@@ -17,7 +96,7 @@ body{
     padding-left: 8%;
     padding-top: 5%;
     padding-bottom: 3%;
-    background-color: black;
+    /* background-color: black; */
 }
 
 /* waving hand */
@@ -49,8 +128,8 @@ ul {
     left: 50%;
     position: absolute;
     transform: translateY(-100%);
-    background: black;
-    color: black;
+    /* background: black;
+    color: black; */
   }
 
 h1, h2 {    /* spacing for main header texts */
@@ -117,7 +196,7 @@ ul li {
 }
 
 .navbar .container-flex {
-    background-color: black;
+    /* background-color: black; */
 }
 
 footer {
@@ -308,7 +387,7 @@ input[type=text] {
   .form {
     padding: 8%;
     border-radius: 5px;
-    background-color: black;
+    /* background-color: black; */
     color: white;
     font-size: 1.5em;
   }
@@ -343,7 +422,13 @@ input[type=text] {
 }
 
 @media screen and (min-width: 750px){ /*tablet tablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet view*/
-    .logo {
+ .dark-mode-toggle {
+    font-size: 5em; 
+padding-left: 88%;
+padding-top: 2%;
+}
+
+.logo {
         font-size: 4.25em;
         /* padding-left: 8%; */
         /* padding-top: 5%; */
@@ -486,8 +571,7 @@ input[type=text] {
       .form {
         padding: 8%;
         border-radius: 5px;
-        background-color: black;
-        color: white;
+        /* background-color: black; */
         font-size: 1.5em;
       }
 
@@ -561,6 +645,12 @@ body {
 }
 
 @media screen and (min-width: 1025px){ /*widescreenview  widescreenview  widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview  */
+
+.dark-mode-toggle {
+    font-size: 4em; 
+padding-left: 95%;
+padding-top: 1%;
+}
 
     .navbar .container-flex ul {
         width: 50%;
