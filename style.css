@@ -15,7 +15,6 @@ body{
     padding-left: 8%;
     padding-top: 5%;
     padding-bottom: 3%;
-    /* background-color: black; */
 }
 
 /*DARK/LIGHT MODE*/
@@ -96,7 +95,7 @@ body.dark .form label {
   
   @keyframes wave-animation {
       0% { transform: rotate( 0.0deg) }
-     10% { transform: rotate(17.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     10% { transform: rotate(17.0deg) }  /* more or less intense wave*/
      20% { transform: rotate(-8.0deg) }
      30% { transform: rotate(14.0deg) }
      40% { transform: rotate(-4.0deg) }
@@ -184,10 +183,6 @@ ul li {
 .main-text h2{ /*fingerpointing alignment*/
     font-size: 2.2em;
     text-align: center;
-}
-
-.navbar .container-flex {
-    /* background-color: black; */
 }
 
 footer {
@@ -382,7 +377,6 @@ input[type=text] {
     font-size: 1.5em;
   }
 
-
   /*ARTWORK PAGE **************************************************************************************************************/
   
   .parallaxscroll section {
@@ -396,11 +390,9 @@ input[type=text] {
     /* display: flex; */
   }
 
+  .parallaxscroll section h1 {
+    color: transparent;}
   
-  .parallaxscroll section  {
-    color: transparent;
-  } /*getting rid of the text*/
-
 .parallaxscroll section:first-of-type {
   background-image:   url(artwork1.jpg);
   padding-right: 30%;
@@ -412,6 +404,8 @@ input[type=text] {
   background-image: url(artwork3.jpg);
 }
 
+
+
 @media screen and (min-width: 750px){ /*tablet tablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet view*/
 
 .dark-mode-toggle {
@@ -419,13 +413,6 @@ font-size: 5em;
 padding-left: 88%;
 padding-top: 2%;
 } /*adjusting the size of the lightbulb*/
-
-/* .container-flex {
-    align-items: right;
-}
-.navbar ul {
-    flex-direction: column;
-} */
 
 
 .logo {
@@ -442,16 +429,13 @@ padding-top: 2%;
     /* MAKING MAIN PAGE TEXT BIGGER */
     .main-text h1{
         font-size: 5em;
-        /* padding-left: 8%; */
         padding-top: 23%;
-        /* color: white;
-        font-weight: bold; */
     }
 
     .main-text p{
         /* color: white; */
         font-size: 1.75em;
-        text-align: left;
+        /* text-align: left; */
         /* padding-left: 8%; */
         padding-bottom: 0%;
     }
@@ -469,133 +453,68 @@ padding-top: 2%;
     padding-top: 10%;
 }
 .two img{
-   /* height: 90vh; */
-   padding-top: 0%;
-   padding-top: 8%;
+   padding-top: 8%; 
    padding-left:27%;
-   /* width: 70vw; */
    width: 75%;
    padding-bottom: 10%;
 }
 
-/* .scrolltext {
-    grid-template-rows: 1fr 1fr;
-} */
 .scrolltext p{
     font-size: 1.35em;
-    /* padding-top: 36%; */
     padding-left: 15%;
     padding-top: 0%;
 }
 
 .scrolltext2 p{
     font-size: 1.35em;
-    padding-left: 10%;
-    /* padding-right: 3%; */
-    width: 90%;
     padding-top: 10%;
-    /* padding-top: 36%; */
-    /* padding-left: 15%; */
-    /* text-align: */
-}
-
-.title-text {
-    font-size: 1.5em;
-    font-weight: bold;
 }
 
 /*UI/UX PAGE**************************************************************************************/
     .image-galleryone {
-        /* display: grid; */
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
         justify-content: center;
-        padding-right: 5%;
-        padding-left: 5%;
         padding-bottom:5%; 
         padding-top: 20%;
     }
 
     .image-gallerytwo {
-        /* display: grid; */
         grid-template-columns: auto auto ;
         grid-template-rows: auto auto auto;
         justify-content: center;
-        padding-bottom: 5%; /*changing from 25 from the mobile to 5% */
-        padding-right: 5%;
-        padding-left: 5%; /*why isnt this workinig*/
+        padding-bottom: 5%; /*changing from 10 from the mobile to 5% */
     }
 
 
     .body-text { /*project descriptions*/
-    /* color: white; */
     font-size: 1.8em;
     width: 95%;
     padding-left: 7%;
-    /* padding-bottom: 10%; */
     }
 
-    /*CONTACT PAGE **************************************************************************************/
+/*CONTACT PAGE **************************************************************************************/
 
-    /* input[type=text] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        background-color: white;
-      } */
-      
-      /* #message {
-          padding-bottom: 100px;}
-           */
-      input[type=submit] {
-        width: 30%;
-        /* background-color: orange;
-        color: black;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer; */
-      }
-      
-      /* input[type=submit]:hover {
-        background-color: #E88404;
-      } */
-      
-      .form {
-        padding: 8%;
-        border-radius: 5px;
-        /* background-color: black; */
-        font-size: 1.5em;
-      }
+input[type=submit] {
+    width: 30%;
+}
 
-      /* DESIGN PAGE ***************************************************************************************/
+/* DESIGN PAGE ***************************************************************************************/
 
  .image-gallery {
         display: grid;
         grid-template-columns: auto auto;
-        /* grid-template-rows:  auto auto; */
-        /* justify-content: center; */
         padding-bottom: 5%; /*changing from 25 from the mobile to 5% */
         padding-right: 3%;
         padding-left: 7%;
     } 
 
-    /* .container ? */
     .image-gallery p{
-        /* padding-top: 5%;
-        padding-bottom: 10%;
-        padding-right: 5%;
-        color: white; */
         padding-left: 10%;
         font-size: 1.5em;
     } 
   
-    /*ABOUT ME PAGE *************************************************************************************/
+/*ABOUT ME PAGE *************************************************************************************/
 
 
 .about-me {
@@ -605,37 +524,17 @@ padding-top: 2%;
     flex-direction: column;
 }
 
-
 .about-me p{
-    /* color: white; */
     padding-top: 9%;
-    /* padding-left: 5%; */
     padding-right: 10%;
     font-size: 1.7em;
 }
 /* DIGITALARTSCREEN*/
 
 .parallaxscroll section {
-  /* height: 0%; */
-  background-size: 100%;
   background-attachment: fixed;
   background-size: 100% auto;
-  /* background-size: cover; */
   display: flex;
-}
-.parallaxscroll section h1 {
-  color: transparent;
-  /* font-size: 15em;
-  text-align: center; */
-}
-.parallaxscroll section:first-of-type {
-  background-image:   url(artwork1.jpg);
-}
-.parallaxscroll section:nth-of-type(2) {
-  background-image: url(artwork2.jpg);
-}
-.parallaxscroll section:last-of-type {
-  background-image: url(artwork3.jpg);
 }
 
 @media screen and (min-width: 1025px){ /*widescreenview  widescreenview  widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview  */
@@ -677,29 +576,30 @@ padding-top: 1%;
         /* padding-left: 1%; */
         padding-top: 5%;
         /* margin-left: -10%; */
-        color: white;
+        /* color: white; */
         padding-left: 0%;
         font-weight: bold;
     }
 
     .main-text p{
-        color: white;
+        /* color: white; */
         font-size: 1.5em;
-        text-align: left;
+        /* text-align: left; */ /*delete?*/
         padding-left: 1%;
     }
 
-    .main-text h2{ /*fingerpointing */
+  /*fingerpointing */  /*delete this whole section??*/
+   /* .main-text h2{ 
         font-size: 3.5em;
-        text-align: center;
-    }    
+        text-align: center; 
+    }    */
 
 /* HOME PAGE PARALLAX RESIZING */
 
 .one img{
     width: 100vh;
-    padding-left: 5%;
-    padding-top: 10%;
+    /* padding-left: 5%;
+    padding-top: 10%; */
 }
 .two img{
    height: 95vh;
@@ -717,7 +617,7 @@ padding-top: 1%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.scrolltext  p{
+.scrolltext p{
     font-size: 1.5em;
     padding-top: 36%;
     padding-left: 15%;
@@ -729,10 +629,10 @@ padding-top: 1%;
     padding-left: 15%;
 }
 
-.title-text {
+/* .title-text {
     font-size: 1.5em;
     font-weight: bold;
-}
+} */
 
 
 /*ABOUT ME PAGE *************************************************************************************/
@@ -750,10 +650,10 @@ padding-top: 1%;
 }
 
 .about-me p{
-    color: white;
-    padding-top: 9%;
+    /* color: white; */
+    /* padding-top: 9%; */
     padding-left: 5%;
-    padding-right: 10%;
+    /* padding-right: 10%; */
     font-size: 1.5em;
 }
 
@@ -809,51 +709,50 @@ padding-top: 1%;
     /* display: grid; */
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto;
-    justify-content: center;
+    /* justify-content: center; */
     padding-right: 3%;
     padding-left: 3%;
-    padding-bottom:5%; 
-    padding-top: 20%;
+    /* padding-bottom:5%; 
+    padding-top: 20%; */
 }
+
+.image-galleryone {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.image-gallerytwo {
+   padding-left: 7%;
+   padding-right: 7%;
+}  /*delete one of these*/
 
 .image-gallerytwo {
     /* display: grid; */
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     justify-content: center;
-    padding-bottom: 5%; /*changing from 25 from the mobile to 5% */
+    padding-bottom: 5%; /*delete this? */
     padding-right: 3%;
     padding-left: 3%; /*why isnt this workinig*/
 }
 
 .body-text { /*project descriptions*/
-color: white;
-font-size: 1.8em;
+/* color: white; */
+/* font-size: 1.8em;
 width: 95%;
 padding-left: 7%;
-padding-bottom: 10%;
+padding-bottom: 10%; ?????*/
 }
 
-.image-galleryone {
-    padding-left:
-}
-/*UI/UX PAGE**************************************************************************************/
 
- .image-galleryone {
-     padding-left: 7%;
-     padding-right: 7%;
- }
 
- .image-gallerytwo {
-    padding-left: 7%;
-    padding-right: 7%;
-}
+
   
  /* DESIGN PAGE ***************************************************************************************/
 
- .image-gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+ .image-gallery { /*delete all of this */
+        /* display: grid;
+        grid-template-columns: 1fr 1fr; */
         /* grid-template-rows:  auto auto; */
         /* justify-content: center; */
         padding-bottom: 5%; /*changing from 25 from the mobile to 5% */
@@ -863,12 +762,12 @@ padding-bottom: 10%;
 
     /* .container ? */
     .image-gallery p{
-        padding-top: 5%;
+        /* padding-top: 5%; */
         padding-bottom: 10%;
         padding-right: 30%;
-        color: white;
+        /* color: white; */
         padding-left: 0%;
-        font-size: 1.5em;
+        /* font-size: 1.5em; */
         /* width: 40%; */
     } 
   
@@ -885,12 +784,12 @@ padding-bottom: 10%;
 
 .parallaxscroll section { /*making the image FIT*/
     /* height: 0%; */
-    background-size: 100%;
+    /* background-size: 100%;
     background-attachment: fixed;
-    background-size: 100% auto;
+    background-size: 100% auto; */
     background-size: contain;
     background-repeat: no-repeat;
-    display: flex;
+    /* display: flex; */
   }
   .parallaxscroll section h1 {
     margin: auto;
@@ -905,10 +804,10 @@ padding-bottom: 10%;
     height: 30%;
 } */
 
-  .parallaxscroll .special {
+  /* .parallaxscroll .special {
       display: grid;
       grid-template-columns: 1fr 1fr;
-  }
+  } */
   .parallaxscroll section:first-of-type {
     background-color: purple;
 
@@ -923,9 +822,9 @@ padding-bottom: 10%;
 /*CONTACT PAGE **************************************************************************************/
 
 /* Changing format so it's side by side*/
-.main-text {
+/* .main-text {
     padding-left: 7%;
-}
+} */
 
 #mainsection {
         display: grid;
