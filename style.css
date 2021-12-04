@@ -224,7 +224,7 @@ section {
     padding: 5%;
 }
 
-.container .image-gallery p{
+.image-gallery p{
     padding-top: 5%;
     padding-bottom: 20%;
     padding-right: 5%;
@@ -232,7 +232,7 @@ section {
     padding-left: 5%;
 } 
 
-.container .image-gallery .special-text {  /*making the titles of the song names bigger w/o messing up the formatting */
+ .image-gallery .special-text {  /*making the titles of the song names bigger w/o messing up the formatting */
     font-size: 2em;
     font-weight: bold;
     line-height: normal;
@@ -292,6 +292,35 @@ input[type=text] {
     font-size: 1.5em;
   }
 
+
+  /*dgital art parllax page */
+
+  
+  .parallaxscroll section {
+    /* height: 100%; */
+    background-size: 100vw; /* cut this*/
+    /* height: 60vh; cut this */
+    width: 100%;
+    background-attachment: fixed;
+    /* background-size: 100vw; */
+    background-size: cover;
+    /* display: flex; */
+  }
+
+  
+  .parallaxscroll section h1 {
+    color: transparent;
+  }
+.parallaxscroll section:first-of-type {
+  background-image:   url(artwork1.jpg);
+}
+.parallaxscroll section:nth-of-type(2) {
+  background-image: url(artwork2.jpg);
+}
+.parallaxscroll section:last-of-type {
+  background-image: url(artwork3.jpg);
+}
+
 @media screen and (min-width: 750px){ /*tablet tablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet view*/
     .logo {
         font-size: 4.25em;
@@ -338,24 +367,26 @@ input[type=text] {
 }
 .two img{
    /* height: 90vh; */
-   padding-top: 10%;
-   padding-left:20%;
+   padding-top: 0%;
+   padding-top: 8%;
+   padding-left:27%;
    /* width: 70vw; */
-   width: 78%;
+   width: 75%;
+   padding-bottom: 10%;
 }
 
 /* .scrolltext {
     grid-template-rows: 1fr 1fr;
 } */
 .scrolltext p{
-    font-size: 1em;
+    font-size: 1.35em;
     /* padding-top: 36%; */
     padding-left: 15%;
-    padding-top: 5%;
+    padding-top: 0%;
 }
 
 .scrolltext2 p{
-    font-size: 1em;
+    font-size: 1.35em;
     padding-left: 10%;
     /* padding-right: 3%; */
     width: 90%;
@@ -478,6 +509,34 @@ input[type=text] {
     /* padding-left: 5%; */
     padding-right: 10%;
     font-size: 1.7em;
+}
+/* DIGITALARTSCREEN*/
+
+html,
+body {
+  /* height: 100%; */
+}
+.parallaxscroll section {
+  /* height: 0%; */
+  background-size: 100%;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  /* background-size: cover; */
+  display: flex;
+}
+.parallaxscroll section h1 {
+  color: transparent;
+  /* font-size: 15em;
+  text-align: center; */
+}
+.parallaxscroll section:first-of-type {
+  background-image:   url(artwork1.jpg);
+}
+.parallaxscroll section:nth-of-type(2) {
+  background-image: url(artwork2.jpg);
+}
+.parallaxscroll section:last-of-type {
+  background-image: url(artwork3.jpg);
 }
 
 @media screen and (min-width: 1025px){ /*widescreenview  widescreenview  widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview  */
@@ -705,9 +764,10 @@ padding-bottom: 10%;
     } 
   
     .image-gallery img{
-        height: 95vh;
+        height: 95%;
         padding-left: 15%;
         padding-bottom: 10%;
+        padding-right: 5%;
     }
 
 
@@ -717,3 +777,49 @@ padding-bottom: 10%;
 
 /*UI/UX PAGE**************************************************************************************/
 
+
+
+/* DIGITAL ART PAGE PARALLAX IMAGES **************************************************************/
+
+.parallaxscroll section {
+    /* height: 0%; */
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+  }
+  .parallaxscroll section h1 {
+    margin: auto;
+    color: white;
+    font-size: 7em;
+    text-align: right;
+    padding-left: 40%;
+    font-weight: bold;
+  }
+
+  .parallaxscroll img {
+      height: 30%;
+      /* padding-top: 10%; */ 
+  }
+
+  .parallaxscroll .special {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  .parallaxscroll section:first-of-type {
+    background-image:   url(artwork1.jpg);
+    /* background-color: rgb(63,94,251);
+    background: linear-gradient(71deg, rgba(63,94,251,1) 1%, rgba(237,125,230,1) 41%, rgba(255,239,242,1) 100%); */
+
+    background-color: purple;
+
+  }
+  .parallaxscroll section:nth-of-type(2) {
+    background-image: url(artwork2.jpg); 
+    background-color: blue; z-index: 1; 
+  }
+  .parallaxscroll section:last-of-type {
+    background-image: url(artwork3.jpg);
+    background-color: linear-gradient(#e66465, #9198e5);  }
