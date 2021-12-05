@@ -21,7 +21,9 @@ body{
 
 .dark-mode-toggle {
 font-size: 3em; 
-padding-left: 82%;
+/* padding-left: 82%; */
+position: relative;
+left: 85%;
 padding-top: 1%;
 }
 
@@ -405,146 +407,143 @@ input[type=text] {
 }
 
 
-
 @media screen and (min-width: 750px){ /*tablet tablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet view*/
 
-.dark-mode-toggle {
-font-size: 5em; 
-padding-left: 88%;
-padding-top: 2%;
-} /*adjusting the size of the lightbulb*/
 
-
-.logo {
-        font-size: 4.25em;
+    .dark-mode-toggle {
+        font-size: 5em; 
     }
     
-    .navbar a{
-        font-size: 2em;
+    .logo {
+            font-size: 4.25em;
+        }
+        
+        .navbar a{
+            font-size: 2em;
+        }
+        .navbar ul{
+            padding-left: 2%;
+        }
+    
+        /* MAKING MAIN PAGE TEXT BIGGER */
+        .main-text h1{
+            font-size: 5em;
+            padding-top: 23%;
+        }
+    
+        .main-text p{
+            /* color: white; */
+            font-size: 1.75em;
+            /* text-align: left; */
+            /* padding-left: 8%; */
+            padding-bottom: 0%;
+        }
+    
+        .main-text h2{ /*fingerpointing */
+            font-size: 3.5em;
+            /* text-align: center; */
+        }    
+    
+    /* Home sceen scroll adjusting size */
+    
+    .one img{
+        width: 70vh;
+        padding-left: 5%;
+        padding-top: 10%;
     }
-    .navbar ul{
-        padding-left: 2%;
+    .two img{
+       padding-top: 8%; 
+       padding-left:27%;
+       width: 75%;
+       padding-bottom: 10%;
     }
-
-    /* MAKING MAIN PAGE TEXT BIGGER */
-    .main-text h1{
-        font-size: 5em;
-        padding-top: 23%;
+    
+    .scrolltext p{
+        font-size: 1.35em;
+        padding-left: 15%;
+        padding-top: 0%;
     }
-
-    .main-text p{
-        /* color: white; */
-        font-size: 1.75em;
-        /* text-align: left; */
-        /* padding-left: 8%; */
-        padding-bottom: 0%;
+    
+    .scrolltext2 p{
+        font-size: 1.35em;
+        padding-top: 10%;
     }
-
-    .main-text h2{ /*fingerpointing */
-        font-size: 3.5em;
-        /* text-align: center; */
-    }    
-
-/* Home sceen scroll adjusting size */
-
-.one img{
-    width: 70vh;
-    padding-left: 5%;
-    padding-top: 10%;
-}
-.two img{
-   padding-top: 8%; 
-   padding-left:27%;
-   width: 75%;
-   padding-bottom: 10%;
-}
-
-.scrolltext p{
-    font-size: 1.35em;
-    padding-left: 15%;
-    padding-top: 0%;
-}
-
-.scrolltext2 p{
-    font-size: 1.35em;
-    padding-top: 10%;
-}
-
-/*UI/UX PAGE**************************************************************************************/
-    .image-galleryone {
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        justify-content: center;
-        padding-bottom:5%; 
-        padding-top: 20%;
-    }
-
-    .image-gallerytwo {
-        grid-template-columns: auto auto ;
-        grid-template-rows: auto auto auto;
-        justify-content: center;
-        padding-bottom: 5%; /*changing from 10 from the mobile to 5% */
-    }
-
-
-    .body-text { /*project descriptions*/
-    font-size: 1.8em;
-    width: 95%;
-    padding-left: 7%;
-    }
-
-/*CONTACT PAGE **************************************************************************************/
-
-input[type=submit] {
-    width: 30%;
-}
-
-/* DESIGN PAGE ***************************************************************************************/
-
- .image-gallery {
-        display: grid;
-        grid-template-columns: auto auto;
-        padding-bottom: 5%; /*changing from 25 from the mobile to 5% */
-        padding-right: 3%;
+    
+    /*UI/UX PAGE**************************************************************************************/
+        .image-galleryone {
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            justify-content: center;
+            padding-bottom:5%; 
+            padding-top: 20%;
+        }
+    
+        .image-gallerytwo {
+            grid-template-columns: auto auto ;
+            grid-template-rows: auto auto auto;
+            justify-content: center;
+            padding-bottom: 5%; /*changing from 10 from the mobile to 5% */
+        }
+    
+    
+        .body-text { /*project descriptions*/
+        font-size: 1.8em;
+        width: 95%;
         padding-left: 7%;
-    } 
-
-    .image-gallery p{
-        padding-left: 10%;
-        font-size: 1.5em;
-    } 
-  
-/*ABOUT ME PAGE *************************************************************************************/
-
-
-.about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.about-me p{
-    padding-top: 9%;
-    padding-right: 10%;
-    font-size: 1.7em;
-}
-/* DIGITALARTSCREEN*/
-
-.parallaxscroll section {
-  background-attachment: fixed;
-  background-size: 100% auto;
-  display: flex;
-}
+        }
+    
+    /*CONTACT PAGE **************************************************************************************/
+    
+    input[type=submit] {
+        width: 30%;
+    }
+    
+    /* DESIGN PAGE ***************************************************************************************/
+    
+     .image-gallery {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding-bottom: 5%; /*changing from 25 from the mobile to 5% */
+            padding-right: 3%;
+            padding-left: 7%;
+        } 
+    
+        .image-gallery p{
+            padding-left: 10%;
+            font-size: 1.5em;
+        } 
+      
+    /*ABOUT ME PAGE *************************************************************************************/
+    
+    
+    .about-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .about-me p{
+        padding-top: 9%;
+        padding-right: 10%;
+        font-size: 1.7em;
+    }
+    /* DIGITALARTSCREEN*/
+    
+    .parallaxscroll section {
+      background-attachment: fixed;
+      background-size: 100% auto;
+      display: flex;
+    }
+    
 
 @media screen and (min-width: 1025px){ /*widescreenview  widescreenview  widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview  */
 
-.dark-mode-toggle {
-font-size: 4em; 
-padding-left: 95%;
-padding-top: 1%;
-}
-
+    .dark-mode-toggle {
+        font-size: 4em; 
+        left: 90%;
+    }
+    
     .navbar .container-flex ul {
         width: 50%;
         padding-left: 3%;
@@ -561,6 +560,10 @@ padding-top: 1%;
         padding-left: 4%;
         padding-top: 2.5%;
         padding-bottom: 3%;
+    }
+
+    .main-text {
+        padding-left: 4%;
     }
     
     .navbar a{
@@ -585,7 +588,7 @@ padding-top: 1%;
         /* color: white; */
         font-size: 1.5em;
         /* text-align: left; */ /*delete?*/
-        padding-left: 1%;
+        padding-left: 0%;
     }
 
   /*fingerpointing */  /*delete this whole section??*/
@@ -598,13 +601,10 @@ padding-top: 1%;
 
 .one img{
     width: 100vh;
-    /* padding-left: 5%;
-    padding-top: 10%; */
 }
+
 .two img{
-   height: 95vh;
-   padding-top: 10%;
-   padding-left: 15%;
+    padding-top: 5%;
 }
 
 
@@ -744,20 +744,17 @@ padding-left: 7%;
 padding-bottom: 10%; ?????*/
 }
 
-
-
-
   
  /* DESIGN PAGE ***************************************************************************************/
 
- .image-gallery { /*delete all of this */
-        /* display: grid;
-        grid-template-columns: 1fr 1fr; */
+ .image-gallery { 
+        /* display: grid; */
+        grid-template-columns: 1fr 1fr; 
         /* grid-template-rows:  auto auto; */
         /* justify-content: center; */
-        padding-bottom: 5%; /*changing from 25 from the mobile to 5% */
-        /* padding-right: 3%; */
-        padding-left: 7%;
+        /* padding-bottom: 5%;
+        padding-right: 3%;
+        padding-left: 7%; */
     } 
 
     /* .container ? */
@@ -821,12 +818,10 @@ padding-bottom: 10%; ?????*/
 
 /*CONTACT PAGE **************************************************************************************/
 
-/* Changing format so it's side by side*/
-/* .main-text {
-    padding-left: 7%;
-} */
 
 #mainsection {
         display: grid;
         grid-template-columns: 1fr 1fr;
 }
+
+
