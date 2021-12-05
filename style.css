@@ -15,6 +15,8 @@ body{
     padding-left: 8%;
     padding-top: 5%;
     padding-bottom: 3%;
+    font-weight: bold;
+
 }
 
 /*DARK/LIGHT MODE*/
@@ -83,6 +85,7 @@ body.dark .body-text h2 {
 body.dark .form label {
     color: black;
 }
+
 
 
 /* waving hand animation*/
@@ -231,8 +234,8 @@ section {
 }
 .two img{
    width: 85vw;
-   padding-top: 10%;
-   padding-left: 12%;
+   padding-top: 5%;
+   padding-left: 14%;
 }
 
 .scrolltext p{
@@ -392,7 +395,7 @@ input[type=text] {
     /* display: flex; */
   }
 
-  .parallaxscroll section h1 {
+.parallaxscroll section h1 {
     color: transparent;}
   
 .parallaxscroll section:first-of-type {
@@ -494,10 +497,10 @@ input[type=text] {
     
     /*CONTACT PAGE **************************************************************************************/
     
-    input[type=submit] {
+    /* input[type=submit] {
         width: 30%;
     }
-    
+     */
     /* DESIGN PAGE ***************************************************************************************/
     
      .image-gallery {
@@ -822,6 +825,16 @@ padding-bottom: 10%; ?????*/
 #mainsection {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding-left: 2%;
 }
 
 
+
+
+@media screen and (prefers-reduced-motion: reduce){
+    .wave {
+        animation: none;
+    }
+
+
+/*stop flip card animation here*/ 
