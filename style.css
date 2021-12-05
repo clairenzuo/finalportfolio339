@@ -91,14 +91,14 @@ body.dark .form label {
 /* waving hand animation*/
 
 .wave {
-    animation-name: wave-animation; 
+    animation-name: wavinghand; 
     animation-duration: 3s;       /*speed of wave*/
     animation-iteration-count: infinite;  
     transform-origin: 70% 70%;       /*pivot point of wave*/
     display: inline-block;
   }
   
-  @keyframes wave-animation {
+  @keyframes wavinghand {
       0% { transform: rotate( 0.0deg) }
      10% { transform: rotate(17.0deg) }  /* more or less intense wave*/
      20% { transform: rotate(-8.0deg) }
@@ -421,14 +421,26 @@ input[type=text] {
             font-size: 4.25em;
         }
         
+        .navbar ul{
+        /* padding-left: 2%; */
+        flex-direction: column;
+        align-content: flex-end;
+        align-items: flex-end;
+        padding-right: 5%;
+        padding-top: 10%;
+        }
+
+    
+
         .navbar a{
             font-size: 2em;
         }
-        .navbar ul{
-            padding-left: 2%;
-        }
-    
+      
         /* MAKING MAIN PAGE TEXT BIGGER */
+
+        .main-text {
+            margin-top: -20%;
+        }
         .main-text h1{
             font-size: 5em;
             padding-top: 23%;
@@ -567,10 +579,24 @@ input[type=text] {
 
     .main-text {
         padding-left: 4%;
+        margin-top: 0%;
     }
     
     .navbar a{
         font-size: 1em;
+    }
+
+    .navbar{
+        height: 70px;
+        color: white;
+        position:
+    }
+    
+    .navbar ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-top: 0%;
     }
     /* .navbar ul{
         padding-left: 2%;
@@ -662,10 +688,10 @@ input[type=text] {
 
 /*FLIP CARD*/
 
-.flip-card {  /* this is the actual image height*/
+.flip-card {  /* this is the height of the box behind the image w the orange text */
     background-color: transparent;
-    width: 400px;
-    height: 300px;
+    width: 350px;
+    height: 600px;
     border: 1px solid #f1f1f1;
   }
   
