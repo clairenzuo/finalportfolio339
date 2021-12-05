@@ -401,6 +401,7 @@ input[type=text] {
 .parallaxscroll section:first-of-type {
   background-image:   url(artwork1.jpg);
   padding-right: 30%;
+  width: 100vw;
 }
 .parallaxscroll section:nth-of-type(2) {
   background-image: url(artwork2.jpg);
