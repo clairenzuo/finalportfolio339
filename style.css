@@ -209,8 +209,8 @@ section {
 .wontainer{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh;
-    width: 100wh;
+    /* height: 100vh;
+    width: 100wh; */
     padding-top: 40%;
 }
 
