@@ -167,7 +167,7 @@ ul li {
 }  
 
 .main-text {
-    padding-bottom: 30%;
+    /* padding-bottom: 30%; */
 }
 
 .main-text h1{ /*main text in the middle of the page */
@@ -211,7 +211,7 @@ section {
     overflow-y: scroll;
     /* height: 100vh;
     width: 100wh; */
-    padding-top: 40%;
+    padding-top: 20%;
 }
 
 .one {
@@ -380,6 +380,9 @@ input[type=text] {
     /* background-color: black; */
     color: white;
     font-size: 1.5em;
+    padding-top: 25%;
+    }
+    
   }
 
   /*ARTWORK PAGE **************************************************************************************************************/
@@ -522,10 +525,11 @@ background-image: url(artwork3.jpg);
     
      .image-gallery {
             display: grid;
-            grid-template-columns: auto auto;
+            grid-template-columns: 1fr 1fr;
             padding-bottom: 5%; /*changing from 25 from the mobile to 5% */
             padding-right: 3%;
             padding-left: 7%;
+            padding-top:15%;
         } 
     
         .image-gallery p{
@@ -533,7 +537,7 @@ background-image: url(artwork3.jpg);
             font-size: 1.5em;
         } 
       
-    /*ABOUT ME PAGE *************************************************************************************/
+    /*ABOUT ME PAGE **************************************************************************************************************************************************************************/
     
     
     .about-me {
@@ -544,16 +548,68 @@ background-image: url(artwork3.jpg);
     }
     
     .about-me p{
-        padding-top: 9%;
+        padding-top: 35%;
         padding-right: 10%;
         font-size: 1.7em;
     }
-    /* DIGITALARTSCREEN*/
+
+    .about-me img{
+        width: 100%;
+        /* margin-top: -30%; */
+        padding-top: 0%;
+    }
+
+.flip-card {  /* this is the height of the box behind the image w the orange text */
+    background-color: transparent;
+    width: 70%;
+    height: 600px;
+    /* border: 1px solid #f1f1f1; */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {  /* this is the actual image width*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    /* background-color: #bbb; */
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    /* background-color: orange; */
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+    /* DIGITALARTSCREEN***************************************************************************************************************************************************************************/
     
     .parallaxscroll section {
       background-attachment: fixed;
       background-size: 100% auto;
       display: flex;
+      /* padding-top: 20%; */
     }
     
 
@@ -670,17 +726,16 @@ background-image: url(artwork3.jpg);
 
 
 /*ABOUT ME PAGE *************************************************************************************/
-
 /*side by side*/
 .about-me {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+    display: flex;
+    flex-direction: row;}
 
 .about-me img{
     width: 80%;
     margin-top: -35%;
-    padding-left: 12%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .about-me p{
@@ -689,15 +744,17 @@ background-image: url(artwork3.jpg);
     padding-left: 5%;
     /* padding-right: 10%; */
     font-size: 1.5em;
+    width: 60vw;
 }
 
 /*FLIP CARD*/
 
+
 .flip-card {  /* this is the height of the box behind the image w the orange text */
     background-color: transparent;
-    width: 350px;
+    width: 100vw;
     height: 600px;
-    border: 1px solid #f1f1f1;
+    /* border: 1px solid #f1f1f1; */
   }
   
   /* This container is needed to position the front and back side */
@@ -726,17 +783,18 @@ background-image: url(artwork3.jpg);
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
+    /* background-color: #bbb; */
     color: black;
   }
   
   /* Style the back side */
   .flip-card-back {
-    background-color: orange;
+    /* background-color: orange; */
     color: white;
     transform: rotateY(180deg);
   }
 
+  
 
 /*UI/UX PAGE**************************************************************************************/
 .image-galleryone {
@@ -798,6 +856,7 @@ padding-bottom: 10%; ?????*/
         padding-right: 30%;
         /* color: white; */
         padding-left: 0%;
+        padding-top: 20%;
         /* font-size: 1.5em; */
         /* width: 40%; */
     } 
@@ -845,10 +904,13 @@ padding-bottom: 10%; ?????*/
   }
   
   .parallaxscroll section:nth-of-type(2) {
-    background-color: lightgreen;
+    background-color: #228b22
+
+    ;
   }
   .parallaxscroll section:last-of-type {
-    background-color: lightskyblue;  }
+    background-color:#4169e1
+    ;  }
 
 
 
@@ -863,11 +925,13 @@ padding-bottom: 10%; ?????*/
 
 
 
-
 @media screen and (prefers-reduced-motion: reduce){
     .wave {
         animation: none;
     }
 
 
-/*stop flip card animation here*/ 
+    .flip-card:hover .flip-card-inner {
+        transform: none;
+      }
+
