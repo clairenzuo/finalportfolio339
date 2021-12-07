@@ -23,6 +23,18 @@ body{
 
 /*DARK/LIGHT MODE*/
 
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+    font-size: 3em; 
+    position: relative;
+    left: 85%;
+    padding-top: 1%;
+}
+/* 
 .dark-mode-toggle {
     font-size: 3em; 
     position: relative;
@@ -32,7 +44,7 @@ body{
 
 .dark-mode-toggle {
     visibility: hidden;
-}
+} */
   
 /* LIGHT MODE - (actually black background as default) */
   body.light {
@@ -243,6 +255,7 @@ section {
     padding-left: 10%;
     width: 90%;
     padding-top: 15%;
+    padding-bottom: 10%;
 }
 
 .scrolltext2 p{
@@ -349,7 +362,7 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 4px;
     box-sizing: border-box;
     background-color: white;
@@ -415,7 +428,7 @@ background-image: url(artwork3.jpg);
     section {
         height: 100vh;
     }
-    .dark-mode-toggle {
+    .label {
         font-size: 5em; 
     }
     
@@ -475,6 +488,7 @@ background-image: url(artwork3.jpg);
         font-size: 1.35em;
         padding-left: 15%;
         padding-top: 0%;
+        /* padding-bottom: 10%; */
     }
     
     .scrolltext2 p{
@@ -557,12 +571,15 @@ background-image: url(artwork3.jpg);
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
+
+  
   
   /* Position the front and back side */
   .flip-card-front, .flip-card-back {  /* this is the actual image width*/
@@ -595,7 +612,7 @@ background-image: url(artwork3.jpg);
 
 @media screen and (min-width: 1025px){ /*widescreenview  widescreenview  widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview widescreenview  */
 
-    .dark-mode-toggle {
+    .label {
         font-size: 4em; 
         left: 90%;
     }
@@ -681,7 +698,7 @@ background-image: url(artwork3.jpg);
 
 .scrolltext2 p{
     font-size: 1.5em;
-    padding-top: 36%;
+    padding-top: 25%;
     padding-left: 15%;
 }
 
@@ -844,6 +861,8 @@ padding-right: 5%;}
 
 
 
+
+
 @media screen and (prefers-reduced-motion: reduce){
     .wave {
         animation: none;
@@ -864,3 +883,11 @@ padding-right: 5%;}
  .progress-bar {
      background: black;
  }
+
+
+
+ 
+
+
+ 
+ 
