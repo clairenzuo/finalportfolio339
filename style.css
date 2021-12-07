@@ -5,6 +5,8 @@
     background-size: 100% 100%;
 }
 
+
+
 body{
     font-family: Helvetica, sans-serif;
     line-height: 1.6;
@@ -98,21 +100,20 @@ body.dark .main-text h2 {
 
 .wave {
     animation-name: wavinghand; 
-    animation-duration: 3s;       /*speed of wave*/
-    animation-iteration-count: infinite;  
+    animation-duration: 5s;       /*speed of wave*/
+    animation-iteration-count: infinite; 
+    display: inline-block; 
     transform-origin: 70% 70%;       /*pivot point of wave*/
-    display: inline-block;
   }
   
   @keyframes wavinghand {
       0% { transform: rotate( 0.0deg) }
-     10% { transform: rotate(17.0deg) }  /* more or less intense wave*/
+     10% { transform: rotate(20.0deg) }  /* more or less intense wave*/
      20% { transform: rotate(-8.0deg) }
      30% { transform: rotate(14.0deg) }
      40% { transform: rotate(-4.0deg) }
      50% { transform: rotate(10.0deg) }
-     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-    100% { transform: rotate( 0.0deg) }
+     60% { transform: rotate( 0.0deg) }  
   }
 
 ul {
@@ -842,6 +843,7 @@ padding-right: 5%;}
 
 
 
+
 @media screen and (prefers-reduced-motion: reduce){
     .wave {
         animation: none;
@@ -851,3 +853,14 @@ padding-right: 5%;}
         transform: none;
       }
 
+ .parallaxscroll section {
+     background-attachment: scroll;
+ }
+
+ .progress-container {
+     background: black;
+ }
+
+ .progress-bar {
+     background: black;
+ }
