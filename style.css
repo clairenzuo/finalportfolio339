@@ -34,18 +34,7 @@ body{
     left: 85%;
     padding-top: 1%;
 }
-/* 
-.dark-mode-toggle {
-    font-size: 3em; 
-    position: relative;
-    left: 85%;
-    padding-top: 1%;
-}
 
-.dark-mode-toggle {
-    visibility: hidden;
-} */
-  
 /* LIGHT MODE - (actually black background as default) */
   body.light {
     background-color: black; 
@@ -212,12 +201,9 @@ footer p{
     color: white;
 }
 
-/* Home Screen snapscroll EFFECT*/
-
 section {
     height: 100vh;
     display: flex;
-    scroll-snap-align: start;
 }
 
 .wontainer{
@@ -393,11 +379,10 @@ input[type=text] {
     color: white;
     font-size: 1.5em;
     padding-top: 25%;
-    }
-    
+    } 
   }
 
-  /*ARTWORK PAGE **************************************************************************************************************/
+/*ARTWORK PAGE **************************************************************************************************************/
   
   section {
     height: 60vh;
@@ -414,7 +399,6 @@ input[type=text] {
 
 .parallaxscroll section:first-of-type {
 background-image: url(artwork1.jpg);
-
 }
 .parallaxscroll section:nth-of-type(2) {
 background-image: url(artwork2.jpg);
@@ -425,9 +409,6 @@ background-image: url(artwork3.jpg);
 
 @media screen and (min-width: 750px){ /*tablet tablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet viewtablet view*/
 
-    section {
-        height: 100vh;
-    }
     .label {
         font-size: 5em; 
     }
@@ -437,7 +418,6 @@ background-image: url(artwork3.jpg);
         }
         
         .navbar ul{
-        /* padding-left: 2%; */
         flex-direction: column;
         align-content: flex-end;
         align-items: flex-end;
@@ -446,7 +426,6 @@ background-image: url(artwork3.jpg);
         }
 
     
-
         .navbar a{
             font-size: 2em;
         }
@@ -488,7 +467,6 @@ background-image: url(artwork3.jpg);
         font-size: 1.35em;
         padding-left: 15%;
         padding-top: 0%;
-        /* padding-bottom: 10%; */
     }
     
     .scrolltext2 p{
@@ -553,17 +531,15 @@ background-image: url(artwork3.jpg);
 
     .about-me img{
         width: 100%;
-        /* margin-top: -30%; */
         padding-top: 0%;
     }
 
-.flip-card {  /* this is the height of the box behind the image w the orange text */
+.flip-card { 
     background-color: transparent;
     width: 70%;
     height: 600px;
   }
   
-  /* This container is needed to position the front and back side */
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -571,37 +547,29 @@ background-image: url(artwork3.jpg);
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
 
-  
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {  /* this is the actual image width*/
+    .flip-card-front, .flip-card-back {  /* this is the actual image width*/
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     color: black;
   }
   
-  /* Style the back side */
   .flip-card-back {
     color: white;
     transform: rotateY(180deg);
   }
 
-    /* DIGITALARTSCREEN***************************************************************************************************************************************************************************/
+/* DIGITALARTSCREEN***************************************************************************************************************************************************************************/
     
     .parallaxscroll section {
       background-attachment: fixed;
@@ -620,12 +588,12 @@ background-image: url(artwork3.jpg);
     .navbar .container-flex ul {
         width: 50%;
         padding-left: 3%;
-    }    /* movees the entire nav bar to align w the logo*/
+    }  
 
 
     .navbar .container-flex ul li {
     padding: 0%;
-} /*adjusts individual elements in the navbar's spacing from each other */
+} 
 
     
     .logo {
@@ -657,12 +625,11 @@ background-image: url(artwork3.jpg);
         padding-top: 0%;
     }
 
-        /* MAKING MAIN PAGE TEXT BIGGER */
+/* MAKING MAIN PAGE TEXT BIGGER */
     .main-text h1{
         font-size: 3.5em;
         padding-top: 5%;
         padding-left: 0%;
-        font-weight: bold;
     }
 
     .main-text p{
@@ -670,7 +637,7 @@ background-image: url(artwork3.jpg);
         padding-left: 0%;
     }
 
-/* HOME PAGE PARALLAX RESIZING */
+/* HOME PAGE SECTIONS RESIZING */
 
 .one img{
     width: 100vh;
@@ -679,7 +646,6 @@ background-image: url(artwork3.jpg);
 .two img{
     padding-top: 5%;
 }
-
 
 .scrolltext {
     display: grid;
@@ -704,7 +670,7 @@ background-image: url(artwork3.jpg);
 
 /*ABOUT ME PAGE *************************************************************************************/
 .about-me {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     padding-left: 5%;
 padding-right: 5%;}
@@ -723,46 +689,12 @@ padding-right: 5%;}
 
 /*FLIP CARD*/
 
-
 .flip-card {  /* this is the height of the box behind the image w the orange text */
-    background-color: transparent;
     width: 50vw;
-    height: 600px;
   }
   
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {  /* this is the actual image width*/
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    color: black;
-  }
-  
-  /* Style the back side */
+
   .flip-card-back {
-    color: white;
-    transform: rotateY(180deg);
     width: 120%;
   }
 
@@ -771,8 +703,6 @@ padding-right: 5%;}
 .image-galleryone {
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto;
-    padding-right: 3%;
-    padding-left: 3%;
 }
 
 .image-galleryone {
@@ -786,13 +716,12 @@ padding-right: 5%;}
 }  /*delete one of these*/
 
 .image-gallerytwo {
-    /* display: grid; */
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     justify-content: center;
-    padding-bottom: 5%; /*delete this? */
+    padding-bottom: 5%;
     padding-right: 3%;
-    padding-left: 3%; /*why isnt this workinig*/
+    padding-left: 3%; 
 }
   
  /* DESIGN PAGE ***************************************************************************************/
@@ -857,10 +786,6 @@ padding-right: 5%;}
         grid-template-columns: 1fr 1fr;
         padding-left: 2%;
 }
-
-
-
-
 
 
 @media screen and (prefers-reduced-motion: reduce){
