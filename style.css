@@ -173,9 +173,6 @@ ul li {
     font-weight: bold;
 }  
 
-.main-text {
-    /* padding-bottom: 30%; */
-}
 
 .main-text h1{ /*main text in the middle of the page */
     font-size: 3em;
@@ -736,14 +733,11 @@ background-image: url(artwork3.jpg);
 /*side by side*/
 .about-me {
     display: flex;
-    flex-direction: row;}
+    flex-direction: row;
+    padding-left: 5%;
+padding-right: 5%;}
 
-.about-me img{
-    width: 80%;
-    margin-top: -35%;
-    padding-left: 15%;
-    padding-right: 15%;
-}
+
 
 .about-me p{
     /* color: white; */
@@ -754,12 +748,17 @@ background-image: url(artwork3.jpg);
     width: 60vw;
 }
 
+.about-me img{
+    padding-right: 10%;
+    padding-top: 10%;
+}
+
 /*FLIP CARD*/
 
 
 .flip-card {  /* this is the height of the box behind the image w the orange text */
     background-color: transparent;
-    width: 100vw;
+    width: 50vw;
     height: 600px;
     /* border: 1px solid #f1f1f1; */
   }
@@ -799,9 +798,9 @@ background-image: url(artwork3.jpg);
     /* background-color: orange; */
     color: white;
     transform: rotateY(180deg);
+    width: 120%;
   }
 
-  
 
 /*UI/UX PAGE**************************************************************************************/
 .image-galleryone {
