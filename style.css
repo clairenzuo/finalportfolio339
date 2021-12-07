@@ -549,7 +549,7 @@ background-image: url(artwork3.jpg);
     transform-style: preserve-3d;
   }
   
-  .flip-card:hover .flip-card-inner {
+  .flip-card:hover .flip-card-inner,.flip-card-inner:focus {
     transform: rotateY(180deg);
   }
 
@@ -713,7 +713,7 @@ padding-right: 5%;}
 .image-gallerytwo {
    padding-left: 7%;
    padding-right: 7%;
-}  /*delete one of these*/
+}  
 
 .image-gallerytwo {
     grid-template-columns: auto auto auto;
@@ -730,7 +730,6 @@ padding-right: 5%;}
         grid-template-columns: 1fr 1fr; 
     } 
 
-    /* .container ? */
     .image-gallery p{
         padding-bottom: 10%;
         padding-right: 30%;
@@ -777,16 +776,13 @@ padding-right: 5%;}
     ;  }
 
 
-
 /*CONTACT PAGE **************************************************************************************/
-
 
 #mainsection {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding-left: 2%;
 }
-
 
 @media screen and (prefers-reduced-motion: reduce){
     .wave {
