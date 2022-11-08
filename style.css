@@ -152,7 +152,7 @@ ul li {
 }
 
 .navbar a{
-    color: white;
+    color: grey;
     padding: 10px;
     margin: 0 5px;
     text-decoration: none;
@@ -167,8 +167,8 @@ ul li {
 /* Makes sure to show what page im on for navigation*/
 .navbar .container-flex #active{ 
     text-decoration: underline 2px;
-    color:orange;
-    text-transform: uppercase;
+    color:white;
+    /* text-transform: uppercase; */
     font-weight: bold;
 }  
 
